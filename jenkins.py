@@ -3,9 +3,9 @@ import sys
 import time
 import json
 
-jenkins_host = "jenkins252.sinonet.me"
-jenkins_user = "ken"
-jenkins_api = "111c9223f607caeed5640cc6358ced1f4b"
+jenkins_host = "localhost_here"
+jenkins_user = "user_here"
+jenkins_api = "api_here"
 dev_path = "OLDJENKINS/job/" 
 cs_path = "CPMS/job/" 
 
