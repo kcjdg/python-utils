@@ -5,8 +5,8 @@ import time
 jenkins_host = "host"
 jenkins_user = "user"
 jenkins_api = "api_key"
-dev_path = "OLDJENKINS/job/"
-cs_path = "CPMS/job/"
+dev_path = "devjenkins/job/"
+cs_path = "cstestjenkins/job/"
 
 
 def check_last_build(job):
@@ -92,7 +92,7 @@ headers = crumb_as_headers()
 dev_build = dev_path + jenkins_job;
 cs_build = cs_path + 'TEST_SYNC_' + jenkins_job.upper() + '_TEST'
 sync_restart_build = cs_path + 'SYNC_RESTART_' + jenkins_job.upper() + '_TEST'
-restart_build = 'CPMS/job/_RESTART_CSTEST_TEST'
+restart_build = 'cstestjenkins/job/_RESTART_CSTEST_TEST'
 
 if action == 'build':
     print("Building Dev Test - Cs Test {0}".format(dev_build))
