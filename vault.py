@@ -16,7 +16,7 @@ def list_keys(path):
 		
 
 headers = dict()
-headers["X-Vault-Token"]="s.7eX56ayfSGsJdGxjsOLVFKBr"
+headers["X-Vault-Token"]="toke_value_here"
 headers["Content-Type"]="application/json"
 params ={"list":"true"}
 
