@@ -28,7 +28,7 @@ class LogNavi:
         if not proj_cache:
             projs = {} 
             res = requests.get(
-                "http://{0}:{1}@{2}/lognavigator/logs/cstest-ag-ftp-sync-baibo-hkn117/list".format(self.username, self.password, self.host))
+                "http://{0}:{1}@{2}/lognavigator/logs/test-project/list".format(self.username, self.password, self.host))
             res.raise_for_status()
             soup = bs4.BeautifulSoup(res.text, 'html.parser')
             for lab in soup.find_all("optgroup"):
